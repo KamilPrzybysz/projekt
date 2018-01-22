@@ -8,10 +8,10 @@ int main(int argc, char const *argv[])
 
   	FILE *plik= fopen(argv[1], "w+");
 
-	char slowa[50];
+	char slowa[100];
 	char* myk= slowa;
-	printf("Podaj słowa do wisania do pliku %s: \n", argv[1]);
-	do
+	printf("Podaj słowa(max. 100 znaków, reszta będzie pominięta) do wisania do pliku %s: \n", argv[1]);
+	do				//wpisywanie do tablicy;
 	{
 		*myk=getchar();
 		if(*myk=='\n')
@@ -20,9 +20,9 @@ int main(int argc, char const *argv[])
 	*(myk)='\0';
 
 	int i;
-	for(i=0; i<50; i++)
+	for(i=0; i<100; i++)
 	{
-		if(slowa[i]=='\0')
+		if(slowa[i]=='\0')			//wpisywanie do pliku ze spacją jako przejściem do następnej linii;;
 		{
 			break;
 		}
