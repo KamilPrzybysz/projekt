@@ -5,7 +5,6 @@
 
 int main(int argc, char const *argv[])
 {
-
 	FILE *plik= fopen(argv[1], "r");
         if(plik==NULL)
         {
@@ -20,7 +19,6 @@ int main(int argc, char const *argv[])
 	{
 		printf("Duze litery czy male? (d albo m)");
 	        scanf("%c", &duzemale);
-
 	}
 	printf("\n\n");
 
@@ -65,15 +63,11 @@ int main(int argc, char const *argv[])
                         {
                                 printf("%c", znak);
                         }
-
         	}
 	}while(!feof(plik));
-        printf("\n");
+	printf("\n");
 
 
-
-
-	fprintf(plik, "\n");
 	fclose(plik);
 
   	return 0;
