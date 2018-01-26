@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 	*(myk)='\0';
 
 	int i;
-	for(i=0; i<100; i++)
+	for(i=0; i<i+1; i++)
 	{
 		if(slowa[i]=='\0')			//wpisywanie do pliku ze spacją jako przejściem do następnej linii;;
 		{
